@@ -11,3 +11,7 @@ do{
 }while (input != 0)
 
 console.log (listaCognomi);
+
+listaCognomi.sort();
+
+console.log (listaCognomi);
