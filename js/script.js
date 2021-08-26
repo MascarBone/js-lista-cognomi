@@ -1,0 +1,2 @@
+let listaCognomi = [];
+let input;
