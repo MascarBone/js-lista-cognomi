@@ -7,6 +7,13 @@ let index;              //Variabile di appoggio per salvare l'indice dell'elemen
 //Nel momento in cui il valore sarà 0, si interrompe l'inserimento
 do{
     input = prompt ("Inserisci un cognome\nInserire 0 per terminare");
+    input = input.toLowerCase();
+
+    // Con questo codice la prima lettera della stringa viene sostituita
+    // dalla sua stessa versione in UpperCase
+    input = input.charAt(0).toUpperCase() + input.substring(1);
+    // console.log (input);
+
     if (input != 0) {
         listaCognomi.push(input);
     }
