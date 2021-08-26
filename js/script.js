@@ -26,6 +26,6 @@ console.log (listaCognomi);
 
 // Ciclo 'for' per trovare l'indice corrispondente al cognome
 for (let i = 0; i < listaCognomi.length; i++) {
-    index = (listaCognomi.indexOf(listaCognomi[i]) + 1);
+    index = i + 1;
     console.log(index +" " + listaCognomi[i]);
 }
