@@ -1,6 +1,6 @@
 let listaCognomi = [];  //Array vuoto per contenere la lista cognomi
 let input;              //Variabile di appoggio per permettere l'inserimento
-let index;              //Variabile di appoggio per salvare l'indice dell'elemento nell'array
+// let index;              //Variabile di appoggio per salvare l'indice dell'elemento nell'array
 
 
 //Ciclo 'do-while' per chiedere l'inserimento all'utente di un cognome
@@ -12,8 +12,7 @@ do{
     // Con questo codice la prima lettera della stringa viene sostituita
     // dalla sua stessa versione in UpperCase
     input = input.charAt(0).toUpperCase() + input.substring(1);
-    // console.log (input);
-
+    
     if (input != 0) {
         listaCognomi.push(input);
     }
@@ -26,6 +25,16 @@ console.log (listaCognomi);
 
 // Ciclo 'for' per trovare l'indice corrispondente al cognome
 for (let i = 0; i < listaCognomi.length; i++) {
-    index = i + 1;
-    console.log(index +" " + listaCognomi[i]);
+    // index = i + 1;
+    console.log(
+        // index + " " +
+        listaCognomi[i]);
 }
+
+input = prompt ("Inserisci il tuo cognome");
+input = input.toLowerCase();
+// Con questo codice la prima lettera della stringa viene sostituita
+// dalla sua stessa versione in UpperCase
+input = input.charAt(0).toUpperCase() + input.substring(1);
+
+console.log((listaCognomi.indexOf(input) + 1) + " " + input);
